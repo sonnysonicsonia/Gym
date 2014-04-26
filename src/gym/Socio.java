@@ -22,7 +22,7 @@ public class Socio extends JPanel {
         initComponents();
         if (!Beans.isDesignTime()) {
             entityManager.getTransaction().begin();
-        }
+        }       
     }
 
     /**
@@ -80,16 +80,16 @@ public class Socio extends JPanel {
         columnBinding.setColumnName("Id Socio");
         columnBinding.setColumnClass(Integer.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${nomSocio}"));
-        columnBinding.setColumnName("Nom Socio");
+        columnBinding.setColumnName("Nombre");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${apSocio}"));
-        columnBinding.setColumnName("Ap Socio");
+        columnBinding.setColumnName("Apellido paterno");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${amSocio}"));
-        columnBinding.setColumnName("Am Socio");
+        columnBinding.setColumnName("Apellido materno");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${fenSocio}"));
-        columnBinding.setColumnName("Fen Socio");
+        columnBinding.setColumnName("Feche de nacimiento");
         columnBinding.setColumnClass(java.util.Date.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${genero}"));
         columnBinding.setColumnName("Genero");
@@ -104,25 +104,25 @@ public class Socio extends JPanel {
         columnBinding.setColumnName("Colonia");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${cp}"));
-        columnBinding.setColumnName("Cp");
+        columnBinding.setColumnName("C.P.");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${edo}"));
-        columnBinding.setColumnName("Edo");
+        columnBinding.setColumnName("Estado");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${delMpio}"));
-        columnBinding.setColumnName("Del Mpio");
+        columnBinding.setColumnName("Delegación/Municipio");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${telSocio}"));
-        columnBinding.setColumnName("Tel Socio");
+        columnBinding.setColumnName("Telefono");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${DStatus}"));
-        columnBinding.setColumnName("DStatus");
+        columnBinding.setColumnName("Status");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${fechaAlta}"));
         columnBinding.setColumnName("Fecha Alta");
         columnBinding.setColumnClass(java.util.Date.class);
         bindingGroup.addBinding(jTableBinding);
-
+        jTableBinding.bind();
         masterScrollPane.setViewportView(masterTable);
 
         nomSocioLabel.setText("Nombre del socio:");
@@ -260,51 +260,50 @@ public class Socio extends JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(newButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(deleteButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(refreshButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(saveButton))
+                    .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 948, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nomSocioLabel)
+                            .addComponent(apSocioLabel)
+                            .addComponent(amSocioLabel)
+                            .addComponent(fenSocioLabel)
+                            .addComponent(generoLabel)
+                            .addComponent(calleLabel)
+                            .addComponent(numeroLabel)
+                            .addComponent(coloniaLabel)
+                            .addComponent(cpLabel)
+                            .addComponent(edoLabel)
+                            .addComponent(delMpioLabel)
+                            .addComponent(telSocioLabel)
+                            .addComponent(DStatusLabel)
+                            .addComponent(fechaAltaLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nomSocioLabel)
-                                    .addComponent(apSocioLabel)
-                                    .addComponent(amSocioLabel)
-                                    .addComponent(fenSocioLabel)
-                                    .addComponent(generoLabel)
-                                    .addComponent(calleLabel)
-                                    .addComponent(numeroLabel)
-                                    .addComponent(coloniaLabel)
-                                    .addComponent(cpLabel)
-                                    .addComponent(edoLabel)
-                                    .addComponent(delMpioLabel)
-                                    .addComponent(telSocioLabel)
-                                    .addComponent(DStatusLabel)
-                                    .addComponent(fechaAltaLabel))
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(newButton)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nomSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(apSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(amSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(fenSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(generoField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(calleField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(numeroField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(coloniaField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(cpField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(edoField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(delMpioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(telSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(DStatusField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)
-                                    .addComponent(fechaAltaField, javax.swing.GroupLayout.DEFAULT_SIZE, 806, Short.MAX_VALUE)))
-                            .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 913, Short.MAX_VALUE))))
+                                .addComponent(deleteButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(refreshButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(saveButton))
+                            .addComponent(nomSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(apSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(amSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(fenSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(generoField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(calleField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(numeroField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(coloniaField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(cpField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(edoField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(delMpioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(telSocioField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(DStatusField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                            .addComponent(fechaAltaField, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE))))
                 .addContainerGap())
         );
 
@@ -314,7 +313,7 @@ public class Socio extends JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nomSocioLabel)

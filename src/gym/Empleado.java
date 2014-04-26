@@ -59,25 +59,25 @@ public class Empleado extends JPanel {
 
         org.jdesktop.swingbinding.JTableBinding jTableBinding = org.jdesktop.swingbinding.SwingBindings.createJTableBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, list, masterTable);
         org.jdesktop.swingbinding.JTableBinding.ColumnBinding columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${idEmp}"));
-        columnBinding.setColumnName("Id Emp");
+        columnBinding.setColumnName("ID empleado");
         columnBinding.setColumnClass(Integer.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${nomEmp}"));
-        columnBinding.setColumnName("Nom Emp");
+        columnBinding.setColumnName("Nombre");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${apEmp}"));
-        columnBinding.setColumnName("Ap Emp");
+        columnBinding.setColumnName("Apellido paterno");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${amEmp}"));
-        columnBinding.setColumnName("Am Emp");
+        columnBinding.setColumnName("Apellido materno");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${telEmp}"));
-        columnBinding.setColumnName("Tel Emp");
+        columnBinding.setColumnName("Telefono");
         columnBinding.setColumnClass(String.class);
         columnBinding = jTableBinding.addColumnBinding(org.jdesktop.beansbinding.ELProperty.create("${tipoEmp}"));
-        columnBinding.setColumnName("Tipo Emp");
+        columnBinding.setColumnName("Tipo de empleado");
         columnBinding.setColumnClass(String.class);
         bindingGroup.addBinding(jTableBinding);
-
+        jTableBinding.bind();
         masterScrollPane.setViewportView(masterTable);
 
         nomEmpLabel.setText("Nombre del empleado:");
@@ -162,12 +162,12 @@ public class Empleado extends JPanel {
                                     .addComponent(tipoEmpLabel))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nomEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
-                                    .addComponent(apEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
-                                    .addComponent(amEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
-                                    .addComponent(telEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
-                                    .addComponent(tipoEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)))
-                            .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 519, Short.MAX_VALUE))))
+                                    .addComponent(nomEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                                    .addComponent(apEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                                    .addComponent(amEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                                    .addComponent(telEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                                    .addComponent(tipoEmpField, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)))
+                            .addComponent(masterScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 607, Short.MAX_VALUE))))
                 .addContainerGap())
         );
 

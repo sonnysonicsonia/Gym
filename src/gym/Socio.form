@@ -53,55 +53,52 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Component id="masterScrollPane" pref="948" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nomSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="apSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="amSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fenSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="generoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="calleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="numeroLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="coloniaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cpLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="edoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="delMpioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="telSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="DStatusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fechaAltaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nomSocioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="apSocioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="amSocioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="fenSocioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="generoField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="calleField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="numeroField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="coloniaField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="cpField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="edoField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="delMpioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="telSocioField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="DStatusField" alignment="0" pref="806" max="32767" attributes="0"/>
-                                  <Component id="fechaAltaField" alignment="0" pref="806" max="32767" attributes="0"/>
-                              </Group>
+                          <Component id="nomSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="apSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="amSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fenSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="generoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="calleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="numeroLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="coloniaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cpLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="edoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="delMpioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="telSocioLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="DStatusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fechaAltaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="refreshButton" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="masterScrollPane" pref="913" max="32767" attributes="0"/>
+                          <Component id="nomSocioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="apSocioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="amSocioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="fenSocioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="generoField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="calleField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="numeroField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="coloniaField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="cpField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="edoField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="delMpioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="telSocioField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="DStatusField" alignment="0" pref="841" max="32767" attributes="0"/>
+                          <Component id="fechaAltaField" alignment="0" pref="841" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -113,7 +110,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="masterScrollPane" pref="136" max="32767" attributes="0"/>
+              <Component id="masterScrollPane" pref="38" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="nomSocioLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -205,66 +202,150 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
         <Component class="javax.swing.JTable" name="masterTable">
+          <Properties>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
           <BindingProperties>
-            <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="false">
+            <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
               <Subbinding sourcePath="${idSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="0"/>
+                <BindingParameter name="NAME" value="Id Socio"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
               <Subbinding sourcePath="${nomSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="1"/>
+                <BindingParameter name="NAME" value="Nombre"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${apSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="2"/>
+                <BindingParameter name="NAME" value="Apellido paterno"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${amSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="3"/>
+                <BindingParameter name="NAME" value="Apellido materno"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${fenSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="4"/>
+                <BindingParameter name="NAME" value="Feche de nacimiento"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.util.Date.class"/>
               </Subbinding>
               <Subbinding sourcePath="${genero}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="5"/>
+                <BindingParameter name="NAME" value="Genero"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${calle}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="6"/>
+                <BindingParameter name="NAME" value="Calle"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${numero}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="7"/>
+                <BindingParameter name="NAME" value="Numero"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${colonia}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="8"/>
+                <BindingParameter name="NAME" value="Colonia"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${cp}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="9"/>
+                <BindingParameter name="NAME" value="C.P."/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${edo}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="10"/>
+                <BindingParameter name="NAME" value="Estado"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${delMpio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="11"/>
+                <BindingParameter name="NAME" value="Delegaci&#xf3;n/Municipio"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${telSocio}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="12"/>
+                <BindingParameter name="NAME" value="Telefono"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${DStatus}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="13"/>
+                <BindingParameter name="NAME" value="Status"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
               </Subbinding>
               <Subbinding sourcePath="${fechaAlta}">
-                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN" value="14"/>
+                <BindingParameter name="NAME" value="Fecha Alta"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.util.Date.class"/>
               </Subbinding>
             </BindingProperty>
