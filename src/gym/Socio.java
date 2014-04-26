@@ -159,6 +159,8 @@ public class Socio extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), nomSocioField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
+        nomSocioField.addActionListener(formListener);
+
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.apSocio}"), apSocioField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue(null);
         bindingGroup.addBinding(binding);
@@ -237,16 +239,16 @@ public class Socio extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), fechaAltaField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        saveButton.setText("Save");
+        saveButton.setText("Guardar");
         saveButton.addActionListener(formListener);
 
-        refreshButton.setText("Refresh");
+        refreshButton.setText("Actualizar");
         refreshButton.addActionListener(formListener);
 
-        newButton.setText("New");
+        newButton.setText("Nuevo");
         newButton.addActionListener(formListener);
 
-        deleteButton.setText("Delete");
+        deleteButton.setText("Eliminar");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), deleteButton, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
@@ -398,6 +400,9 @@ public class Socio extends JPanel {
             else if (evt.getSource() == deleteButton) {
                 Socio.this.deleteButtonActionPerformed(evt);
             }
+            else if (evt.getSource() == nomSocioField) {
+                Socio.this.nomSocioFieldActionPerformed(evt);
+            }
         }
     }// </editor-fold>//GEN-END:initComponents
 
@@ -450,6 +455,10 @@ public class Socio extends JPanel {
             list.addAll(merged);
         }
     }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void nomSocioFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomSocioFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomSocioFieldActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField DStatusField;

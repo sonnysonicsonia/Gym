@@ -120,16 +120,16 @@ public class Clases extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), idEmpField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
-        saveButton.setText("Save");
+        saveButton.setText("Guardar");
         saveButton.addActionListener(formListener);
 
-        refreshButton.setText("Refresh");
+        refreshButton.setText("Actualizar");
         refreshButton.addActionListener(formListener);
 
-        newButton.setText("New");
+        newButton.setText("Nuevo");
         newButton.addActionListener(formListener);
 
-        deleteButton.setText("Delete");
+        deleteButton.setText("Eliminar");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), deleteButton, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
