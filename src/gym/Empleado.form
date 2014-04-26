@@ -184,7 +184,7 @@
           <BindingProperties>
             <BindingProperty name="elements" source="list" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
               <Subbinding sourcePath="${idEmp}">
-                <BindingParameter name="NAME" value="ID empleado"/>
+                <BindingParameter name="NAME" value="ID Empleado"/>
                 <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
               </Subbinding>
               <Subbinding sourcePath="${nomEmp}">
